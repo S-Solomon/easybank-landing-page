@@ -187,6 +187,7 @@
 }
 .easybanking h2 {
   font-weight: 200;
+  text-align: center;
   color: #2d314d;
   padding: 10rem 0 1rem 0;
 }
@@ -225,6 +226,84 @@
   padding: 1.5rem 0;
 }
 
+.latest-articles {
+  padding: 0 3rem;
+  position: relative;
+}
+.latest-articles h2 {
+  padding: 2rem 0;
+  text-align: center;
+}
+.latest-articles .articles {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr;
+}
+.latest-articles .articles__currency {
+  width: 300px;
+}
+.latest-articles .articles__currency img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-size: contain;
+}
+.latest-articles .articles__currency .container {
+  padding: 0 1.5rem;
+}
+.latest-articles .articles__currency .container .para {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+.latest-articles .articles__restaurant {
+  width: 80vw;
+}
+.latest-articles .articles__restaurant img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-size: contain;
+}
+.latest-articles .articles__restaurant .container {
+  padding: 0 1.5rem;
+}
+.latest-articles .articles__restaurant .container .para {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+.latest-articles .articles__plane {
+  width: 80vw;
+}
+.latest-articles .articles__plane img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-size: contain;
+}
+.latest-articles .articles__plane .container {
+  padding: 0 1.5rem;
+}
+.latest-articles .articles__plane .container .para {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+.latest-articles .articles__confetti {
+  width: 80vw;
+}
+.latest-articles .articles__confetti img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-size: contain;
+}
+.latest-articles .articles .container {
+  padding: 0 1.5rem;
+}
+.latest-articles .articles .container .para {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -259,6 +338,11 @@ h3 {
 h4 {
   font-weight: 400;
   color: #2d314d;
+}
+
+.sub-text {
+  font-size: 0.6rem;
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

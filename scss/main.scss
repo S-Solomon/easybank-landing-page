@@ -2,6 +2,7 @@
 @use '../scss/_partials/header' ;
 @use '../scss/_partials/hero' ;
 @use '../scss/_partials/easybanking' ;
+@use '../scss/_partials/articles' ;
 
 
 * {
@@ -38,4 +39,9 @@ h3 {
 h4 {
     font-weight: 400;
     color: utilities.$Dark-Blue;
+}
+
+.sub-text {
+    font-size: .6rem;
+    padding: 1rem 0;    
 }

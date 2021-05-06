@@ -1,1 +1,82 @@
 @use '../_partials/utilities' ;
+
+
+.latest-articles {
+    @include utilities.mobile-padding;
+    position: relative;
+    h2 {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .articles {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: 1fr;
+        &__currency{
+            width: 300px;
+            img {
+                width: 100%;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                background-size: contain;
+            }
+            .container {
+                padding: 0 1.5rem;
+                .para {
+                    padding: 1rem 0;
+                    font-size: .8rem;
+                }
+            }
+        }
+        &__restaurant{
+            width: 80vw;
+            img {
+                width: 100%;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                background-size: contain;
+            }
+            .container {
+                padding: 0 1.5rem;
+                .para {
+                    padding: 1rem 0;
+                    font-size: .8rem;
+                }
+            }
+        }
+        &__plane{
+            width: 80vw;
+            img {
+                width: 100%;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                background-size: contain;
+            }
+            .container {
+                padding: 0 1.5rem;
+                .para {
+                    padding: 1rem 0;
+                    font-size: .8rem;
+                }
+            }
+        }
+        &__confetti{
+            width: 80vw;
+            img {
+                width: 100%;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                background-size: contain;
+            }
+        }
+        .container {
+            padding: 0 1.5rem;
+            .para {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+        }
+        
+    }
+    
+}
