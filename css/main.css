@@ -1,11 +1,151 @@
+.main-padding {
+  padding: 0 3rem;
+}
+
+.navbar {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #333;
+  color: white;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .navbar {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.navbar__logo {
+  padding: 1.5rem 0;
+}
+.navbar__links {
+  width: 100%;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .navbar__links {
+    width: 40%;
+    display: flex;
+  }
+}
+.navbar__links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .navbar__links ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.navbar__links ul li {
+  text-align: center;
+}
+.navbar__links ul li a {
+  display: block;
+  position: relative;
+  padding: 1rem;
+}
+.navbar__links ul li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 0.25rem;
+  width: 0;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  transition: all 0.4s ease-in-out;
+}
+.navbar__links ul li a:hover::before {
+  width: 100%;
+}
+
+.navbar__links.active {
+  display: flex;
+}
+
+.primary-button {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  padding: 10px 30px;
+  border-radius: 2rem;
+  outline: none;
+  color: white;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .primary-button {
+    display: inline;
+  }
+}
+
+.menu-toggle {
+  position: fixed;
+  z-index: 9999;
+  right: 10%;
+  top: 1.5rem;
+  width: 2rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle span {
+  background: #000000;
+  width: 100%;
+  height: 3px;
+}
+
+.menu-toggle.active {
+  transform: rotate(-180deg);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  position: absolute;
+  background: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  position: absolute;
+  background: #000000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
 }
 
-.nav {
-  background-color: red;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */
