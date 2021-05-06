@@ -3,12 +3,14 @@
 }
 
 .navbar {
-  padding: 0 1.5rem;
+  background-color: white;
+  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   color: white;
   flex-direction: column;
+  z-index: 999;
 }
 @media (min-width: 1024px) {
   .navbar {
@@ -20,6 +22,7 @@
   padding: 1.5rem 0;
 }
 .navbar__links {
+  z-index: 999;
   width: 100%;
   display: none;
   transition: all 0.5s ease-in-out;
@@ -131,6 +134,97 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.hero {
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: -10000;
+}
+.hero__left {
+  grid-area: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__left h1 {
+  font-size: 2.2rem;
+  font-weight: 200;
+  padding-top: 2rem;
+  color: #2d314d;
+}
+.hero__left p {
+  padding: 1.5rem 0;
+  opacity: 0.4;
+  font-size: 0.9rem;
+}
+.hero__left .primary-button {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  padding: 15px 40px;
+  border-radius: 2rem;
+  outline: none;
+  color: white;
+  display: block;
+  font-size: 0.8rem;
+}
+.hero__right {
+  grid-area: 1;
+  background-image: url(/images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -10000;
+}
+.hero__right img {
+  margin-top: -125px;
+  height: 400px;
+  z-index: -3;
+}
+
+.easybanking {
+  padding: 0 3rem;
+  background-color: #fafafa;
+}
+.easybanking h2 {
+  font-weight: 200;
+  color: #2d314d;
+  padding: 10rem 0 1rem 0;
+}
+.easybanking p {
+  opacity: 0.4;
+  font-size: 0.9rem;
+  padding-bottom: 4rem;
+}
+.easybanking .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.easybanking .grid__banking {
+  text-align: center;
+}
+.easybanking .grid__banking h3 {
+  padding: 1.5rem 0;
+}
+.easybanking .grid__budgeting {
+  text-align: center;
+}
+.easybanking .grid__budgeting h3 {
+  padding: 1.5rem 0;
+}
+.easybanking .grid__onboarding {
+  text-align: center;
+}
+.easybanking .grid__onboarding h3 {
+  padding: 1.5rem 0;
+}
+.easybanking .grid__api {
+  text-align: center;
+}
+.easybanking .grid__api h3 {
+  padding: 1.5rem 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,10 +236,29 @@ ul {
   list-style: none;
 }
 
+p {
+  opacity: 0.4;
+}
+
 a {
   text-decoration: none;
   font-size: 18px;
   color: #000000;
+}
+
+h2 {
+  font-weight: 200;
+  color: #2d314d;
+}
+
+h3 {
+  font-weight: 200;
+  color: #2d314d;
+}
+
+h4 {
+  font-weight: 400;
+  color: #2d314d;
 }
 
 /*# sourceMappingURL=main.css.map */

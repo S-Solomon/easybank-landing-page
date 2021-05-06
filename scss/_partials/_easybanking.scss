@@ -1,0 +1,47 @@
+@use '../_partials/utilities' ;
+
+
+.easybanking {
+    @include utilities.mobile-padding;
+    background-color: utilities.$Very-Light-Gray;
+    h2 {
+        font-weight: 200;
+        color: utilities.$Dark-Blue;
+        padding: 10rem 0 1rem 0 ;
+    }
+    p {
+        opacity: 0.4;
+        font-size: .9rem;
+        padding-bottom: 4rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        &__banking {
+            text-align: center;
+            h3 {
+                padding: 1.5rem 0;
+            }
+        }
+        &__budgeting {
+            text-align: center;
+            h3 {
+                padding: 1.5rem 0;
+            }
+        }
+        &__onboarding {
+            text-align: center;
+            h3 {
+                padding: 1.5rem 0;
+            }
+        }
+        &__api {
+            text-align: center;
+            h3 {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+}
