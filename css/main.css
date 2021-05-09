@@ -255,6 +255,12 @@
   padding: 1rem 0;
   font-size: 0.8rem;
 }
+.latest-articles .articles__currency .container h4 {
+  cursor: pointer;
+}
+.latest-articles .articles__currency .container h4:hover {
+  color: #31d35c;
+}
 .latest-articles .articles__restaurant {
   width: 300px;
 }
@@ -270,6 +276,12 @@
 .latest-articles .articles__restaurant .container .para {
   padding: 1rem 0;
   font-size: 0.8rem;
+}
+.latest-articles .articles__restaurant .container h4 {
+  cursor: pointer;
+}
+.latest-articles .articles__restaurant .container h4:hover {
+  color: #31d35c;
 }
 .latest-articles .articles__plane {
   width: 300px;
@@ -287,6 +299,12 @@
   padding: 1rem 0;
   font-size: 0.8rem;
 }
+.latest-articles .articles__plane .container h4 {
+  cursor: pointer;
+}
+.latest-articles .articles__plane .container h4:hover {
+  color: #31d35c;
+}
 .latest-articles .articles__confetti {
   width: 300px;
 }
@@ -302,6 +320,12 @@
 .latest-articles .articles .container .para {
   padding: 1rem 0;
   font-size: 0.8rem;
+}
+.latest-articles .articles .container h4 {
+  cursor: pointer;
+}
+.latest-articles .articles .container h4:hover {
+  color: #31d35c;
 }
 
 .footer {

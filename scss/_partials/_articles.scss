@@ -26,6 +26,12 @@
                     padding: 1rem 0;
                     font-size: .8rem;
                 }
+                h4 {
+                    cursor: pointer;
+                    &:hover {
+                        color: utilities.$Lime-Green;
+                    }
+                }
             }
         }
         &__restaurant{
@@ -41,6 +47,12 @@
                 .para {
                     padding: 1rem 0;
                     font-size: .8rem;
+                }
+                h4 {
+                    cursor: pointer;
+                    &:hover {
+                        color: utilities.$Lime-Green;
+                    }
                 }
             }
         }
@@ -58,6 +70,12 @@
                     padding: 1rem 0;
                     font-size: .8rem;
                 }
+                h4 {
+                    cursor: pointer;
+                    &:hover {
+                        color: utilities.$Lime-Green;
+                    }
+                }
             }
         }
         &__confetti{
@@ -74,6 +92,12 @@
             .para {
                 padding: 1rem 0;
                 font-size: .8rem;
+            }
+            h4 {
+                cursor: pointer;
+                &:hover {
+                    color: utilities.$Lime-Green;
+                }
             }
         }
         
