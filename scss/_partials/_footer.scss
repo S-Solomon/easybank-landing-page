@@ -4,12 +4,29 @@
     @include utilities.mobile-padding;
     font-size: .8rem;
     background-color: utilities.$Dark-Blue;
+    @media screen and (min-width: 1440px) {
+        @include utilities.desktop-padding;
+        display: flex;
+        justify-content: space-between;
+    }
     color: white;
     .left-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (min-width: 1440px) {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+        }
         .logo-area {
+            @media screen and (min-width: 1440px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 70%;
+
+            }
             padding: 1rem 0;
             .logo-area-div {
                 .footer-logo {
@@ -22,6 +39,7 @@
                 align-items: center;
                 justify-content: space-between;
                 padding-top: 1rem;
+                
                 .svg-footer {
                     color: white;
                     width: 25px;
@@ -35,11 +53,28 @@
         }
         .links-area {
             padding: 1rem 0;
+            width: 60%;
             ul {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
+                @media screen and (min-width: 1440px) {
+                    display: flex;
+                    flex-direction: row;
+                    text-align: left;
+                    justify-content: space-around;
+                }
+                .links-container {
+                    text-align: center;
+                    @media screen and (min-width: 1440px) {
+                        text-align: left;
+                    }
+                }
+                @media screen and (min-width: 1440px) {
+                    width: 100%;
+                }
+                
                 li {
                     padding: 0.5rem 0;
                     
@@ -59,6 +94,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        @media screen and (min-width: 1440px) {
+            justify-content: space-around;
+        }
         .footer-btn {
         background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         padding: 10px 30px;
@@ -67,6 +105,10 @@
         color: white;
         margin-top: 1rem;
         cursor: pointer;
+        @media screen and (min-width: 1440px) {
+            margin-top: 2rem;
+            font-size: .8rem;
+        }
         }
         p {
             padding: 2rem 0;
@@ -77,4 +119,13 @@
 .svg-footer:hover {
     color: utilities.$Lime-Green;
 
+}
+
+img {
+    .svg-footer{
+        &:hover {
+            color: utilities.$Lime-Green !important;
+        }
+    
+    }
 }
