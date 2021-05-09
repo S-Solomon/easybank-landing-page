@@ -4,26 +4,46 @@
 .easybanking {
     @include utilities.mobile-padding;
     background-color: utilities.$Very-Light-Gray;
+    @media screen and (min-width: 1440px) {
+        @include utilities.desktop-padding;
+    }
     h2 {
         font-weight: 200;
         text-align: center;
         color: utilities.$Dark-Blue;
         padding: 10rem 0 1rem 0 ;
+        @media screen and (min-width: 1440px) {
+            text-align: left;
+            font-size: 2rem;
+        }
     }
     p {
         opacity: 0.4;
         font-size: .9rem;
         padding-bottom: 4rem;
+        @media screen and (min-width: 1440px) {
+            width: 50%;
+            font-size: 1.1rem;
+        }
     }
 
     .grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
+        @media screen and (min-width: 1440px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
         &__banking {
             text-align: center;
             h3 {
                 padding: 1.5rem 0;
+            }
+            p {
+                @media screen and (min-width: 1440px) {
+                    text-align: center;
+                    width: 100%;
+                }
             }
         }
         &__budgeting {
@@ -31,17 +51,35 @@
             h3 {
                 padding: 1.5rem 0;
             }
+            p {
+                @media screen and (min-width: 1440px) {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
         }
         &__onboarding {
             text-align: center;
             h3 {
                 padding: 1.5rem 0;
             }
+            p {
+                @media screen and (min-width: 1440px) {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
         }
         &__api {
             text-align: center;
             h3 {
                 padding: 1.5rem 0;
+            }
+            p {
+                @media screen and (min-width: 1440px) {
+                    text-align: center;
+                    width: 100%;
+                }
             }
         }
     }

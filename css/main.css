@@ -237,21 +237,43 @@
   padding: 0 3rem;
   background-color: #fafafa;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking {
+    padding: 0 6rem;
+  }
+}
 .easybanking h2 {
   font-weight: 200;
   text-align: center;
   color: #2d314d;
   padding: 10rem 0 1rem 0;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
+}
 .easybanking p {
   opacity: 0.4;
   font-size: 0.9rem;
   padding-bottom: 4rem;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking p {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+}
 .easybanking .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+}
+@media screen and (min-width: 1440px) {
+  .easybanking .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .easybanking .grid__banking {
   text-align: center;
@@ -259,11 +281,23 @@
 .easybanking .grid__banking h3 {
   padding: 1.5rem 0;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__banking p {
+    text-align: center;
+    width: 100%;
+  }
+}
 .easybanking .grid__budgeting {
   text-align: center;
 }
 .easybanking .grid__budgeting h3 {
   padding: 1.5rem 0;
+}
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__budgeting p {
+    text-align: center;
+    width: 100%;
+  }
 }
 .easybanking .grid__onboarding {
   text-align: center;
@@ -271,11 +305,23 @@
 .easybanking .grid__onboarding h3 {
   padding: 1.5rem 0;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__onboarding p {
+    text-align: center;
+    width: 100%;
+  }
+}
 .easybanking .grid__api {
   text-align: center;
 }
 .easybanking .grid__api h3 {
   padding: 1.5rem 0;
+}
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__api p {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .latest-articles {
