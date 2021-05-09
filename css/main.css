@@ -12,6 +12,11 @@
   flex-direction: column;
   z-index: 999;
 }
+@media screen and (min-width: 1440px) {
+  .navbar {
+    padding: 0 6rem;
+  }
+}
 @media (min-width: 1024px) {
   .navbar {
     align-items: center;
@@ -140,6 +145,13 @@
   grid-template-columns: 1fr;
   z-index: -10000;
 }
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 0 6rem;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+  }
+}
 .hero__left {
   grid-area: 0;
   display: flex;
@@ -147,16 +159,35 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1440px) {
+  .hero__left {
+    grid-area: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 .hero__left h1 {
   font-size: 2.2rem;
   font-weight: 200;
   padding-top: 2rem;
   color: #2d314d;
 }
+@media screen and (min-width: 1440px) {
+  .hero__left h1 {
+    font-size: 3rem;
+    padding: 7rem 0 1rem 0;
+  }
+}
 .hero__left p {
   padding: 1.5rem 0;
   opacity: 0.4;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 1440px) {
+  .hero__left p {
+    width: 60%;
+    font-size: 1.1rem;
+  }
 }
 .hero__left .primary-button {
   background: linear-gradient(to right, #31d35c, #2bb7da);
@@ -167,6 +198,12 @@
   display: block;
   font-size: 0.8rem;
 }
+@media screen and (min-width: 1440px) {
+  .hero__left .primary-button {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+}
 .hero__right {
   grid-area: 1;
   background-image: url(/images/bg-intro-mobile.svg);
@@ -175,10 +212,25 @@
   background-size: cover;
   z-index: -10000;
 }
+@media screen and (min-width: 1440px) {
+  .hero__right {
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-position: top right;
+    background-size: contain;
+  }
+}
 .hero__right img {
   margin-top: -125px;
   height: 400px;
   z-index: -3;
+}
+@media screen and (min-width: 1440px) {
+  .hero__right img {
+    width: 100%;
+    height: 700px;
+    margin-left: 10rem;
+    margin-top: -90px;
+  }
 }
 
 .easybanking {
@@ -238,6 +290,11 @@
   display: grid;
   gap: 4rem;
   grid-template-columns: 1fr;
+}
+@media screen and (max-width: 768px) {
+  .latest-articles .articles {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .latest-articles .articles__currency {
   width: 300px;

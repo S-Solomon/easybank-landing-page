@@ -12,6 +12,9 @@
         display: grid;
         gap: 4rem;
         grid-template-columns: 1fr;
+        @media screen and(max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
         &__currency{
             width: 300px;
             img {

@@ -1,7 +1,9 @@
 @use '../_partials/utilities' ;
 
 .navbar {
-    // padding: 0 1.5rem;
+    @media screen and (min-width: 1440px) {
+        @include utilities.desktop-padding;
+    }
     background-color: white;
     @include utilities.mobile-padding;
     display: flex;
