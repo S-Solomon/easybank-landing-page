@@ -252,6 +252,7 @@
   .easybanking h2 {
     text-align: left;
     font-size: 2rem;
+    padding-top: 0;
   }
 }
 .easybanking p {
@@ -278,48 +279,68 @@
 .easybanking .grid__banking {
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__banking {
+    text-align: left;
+  }
+}
 .easybanking .grid__banking h3 {
   padding: 1.5rem 0;
 }
 @media screen and (min-width: 1440px) {
   .easybanking .grid__banking p {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 }
 .easybanking .grid__budgeting {
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__budgeting {
+    text-align: left;
+  }
+}
 .easybanking .grid__budgeting h3 {
   padding: 1.5rem 0;
 }
 @media screen and (min-width: 1440px) {
   .easybanking .grid__budgeting p {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 }
 .easybanking .grid__onboarding {
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__onboarding {
+    text-align: left;
+  }
+}
 .easybanking .grid__onboarding h3 {
   padding: 1.5rem 0;
 }
 @media screen and (min-width: 1440px) {
   .easybanking .grid__onboarding p {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 }
 .easybanking .grid__api {
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .easybanking .grid__api {
+    text-align: left;
+  }
+}
 .easybanking .grid__api h3 {
   padding: 1.5rem 0;
 }
 @media screen and (min-width: 1440px) {
   .easybanking .grid__api p {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 }
@@ -328,9 +349,22 @@
   padding: 0 3rem;
   position: relative;
 }
+@media screen and (min-width: 1440px) {
+  .latest-articles {
+    padding: 0 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
 .latest-articles h2 {
   padding: 2rem 0;
   text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .latest-articles h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
 }
 .latest-articles .articles {
   display: grid;
@@ -342,8 +376,18 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (min-width: 1440px) {
+  .latest-articles .articles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .latest-articles .articles__currency {
   width: 300px;
+}
+@media screen and (min-width: 1440px) {
+  .latest-articles .articles__currency {
+    width: 250px;
+  }
 }
 .latest-articles .articles__currency img {
   width: 100%;
@@ -367,6 +411,11 @@
 .latest-articles .articles__restaurant {
   width: 300px;
 }
+@media screen and (min-width: 1440px) {
+  .latest-articles .articles__restaurant {
+    width: 250px;
+  }
+}
 .latest-articles .articles__restaurant img {
   width: 100%;
   border-top-left-radius: 0.5rem;
@@ -389,6 +438,11 @@
 .latest-articles .articles__plane {
   width: 300px;
 }
+@media screen and (min-width: 1440px) {
+  .latest-articles .articles__plane {
+    width: 250px;
+  }
+}
 .latest-articles .articles__plane img {
   width: 100%;
   border-top-left-radius: 0.5rem;
@@ -410,6 +464,11 @@
 }
 .latest-articles .articles__confetti {
   width: 300px;
+}
+@media screen and (min-width: 1440px) {
+  .latest-articles .articles__confetti {
+    width: 250px;
+  }
 }
 .latest-articles .articles__confetti img {
   width: 100%;

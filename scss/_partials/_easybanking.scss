@@ -15,6 +15,7 @@
         @media screen and (min-width: 1440px) {
             text-align: left;
             font-size: 2rem;
+            padding-top: 0;
         }
     }
     p {
@@ -36,51 +37,66 @@
         }
         &__banking {
             text-align: center;
+            @media screen and (min-width: 1440px) {
+                text-align: left;
+            }
             h3 {
                 padding: 1.5rem 0;
+ 
             }
             p {
                 @media screen and (min-width: 1440px) {
-                    text-align: center;
+                    text-align: left;
                     width: 100%;
                 }
             }
+
         }
         &__budgeting {
             text-align: center;
+            @media screen and (min-width: 1440px) {
+                text-align: left;
+            }
             h3 {
                 padding: 1.5rem 0;
             }
             p {
                 @media screen and (min-width: 1440px) {
-                    text-align: center;
+                    text-align: left;
                     width: 100%;
                 }
             }
         }
         &__onboarding {
             text-align: center;
+            @media screen and (min-width: 1440px) {
+                text-align: left;
+            }
             h3 {
                 padding: 1.5rem 0;
             }
             p {
                 @media screen and (min-width: 1440px) {
-                    text-align: center;
+                    text-align: left;
                     width: 100%;
                 }
             }
         }
         &__api {
             text-align: center;
+            @media screen and (min-width: 1440px) {
+                text-align: left;
+            }
             h3 {
                 padding: 1.5rem 0;
             }
             p {
                 @media screen and (min-width: 1440px) {
-                    text-align: center;
+                    text-align: left;
                     width: 100%;
                 }
             }
         }
     }
 }
+

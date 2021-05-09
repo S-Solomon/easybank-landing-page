@@ -4,9 +4,18 @@
 .latest-articles {
     @include utilities.mobile-padding;
     position: relative;
+    @media screen and (min-width: 1440px) {
+        @include utilities.desktop-padding;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
     h2 {
         padding: 2rem 0;
         text-align: center;
+        @media screen and (min-width: 1440px) {
+            text-align: left;
+            font-size: 2rem;
+        }
     }
     .articles {
         display: grid;
@@ -15,8 +24,14 @@
         @media screen and(max-width: 768px) {
             grid-template-columns: 1fr 1fr;
         }
+        @media screen and (min-width: 1440px) {
+            grid-template-columns: repeat(4, 1fr)
+        }
         &__currency{
             width: 300px;
+            @media screen and (min-width: 1440px) {
+                width: 250px;
+            }
             img {
                 width: 100%;
                 border-top-left-radius: 0.5rem;
@@ -39,6 +54,9 @@
         }
         &__restaurant{
             width: 300px;
+            @media screen and (min-width: 1440px) {
+                width: 250px;
+            }
             img {
                 width: 100%;
                 border-top-left-radius: 0.5rem;
@@ -61,6 +79,9 @@
         }
         &__plane{
             width: 300px;
+            @media screen and (min-width: 1440px) {
+                width: 250px;
+            }
             img {
                 width: 100%;
                 border-top-left-radius: 0.5rem;
@@ -83,6 +104,9 @@
         }
         &__confetti{
             width: 300px;
+            @media screen and (min-width: 1440px) {
+                width: 250px;
+            }
             img {
                 width: 100%;
                 border-top-left-radius: 0.5rem;
