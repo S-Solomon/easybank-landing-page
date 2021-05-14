@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend mentors](https://www.frontendmentor.io/solutions/mobile-first-using-sass-new-features-forwarduse-2yyjqnT3d)
+- Live Site URL: [netlify](https://focused-einstein-832c2c.netlify.app)
 
 ## My process
 
